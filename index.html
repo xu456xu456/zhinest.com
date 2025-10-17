@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>智巢 · ZHINEST | 智慧的栖所，连接未来的你</title>
+  <meta name="description" content="智巢 ZHINEST —— 智慧的栖所，连接未来的你。以中文为主的品牌概念页：智慧生态、学习成长、未来生活。">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="智巢 · ZHINEST">
+  <meta property="og:description" content="智慧的栖所，连接未来的你。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zhinest.com/">
+  <meta name="theme-color" content="#f7f5f0">
+  <style>
+    :root{
+      --bg:#f7f5f0;
+      --paper:#ffffff;
+      --ink:#2f3a44;
+      --muted:#6c7b88;
+      --gold:#bfa06a;
+      --line:#e7e3dc;
+      --shadow:0 12px 30px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:"PingFang SC","Noto Sans CJK","Helvetica Neue",Arial,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(900px 400px at 20% 5%,#faf7f2 0%,transparent 70%),
+        radial-gradient(800px 360px at 90% 0%,#fbfaf7 0%,transparent 70%),
+        var(--bg);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:42px 20px 60px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{
+      display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);
+    }
+    .logo{
+      width:42px;height:42px;border-radius:12px;
+      background:conic-gradient(from 180deg at 50% 50%,#e9dcc4 0 25%,#f5efe4 25% 50%,#e6d3ad 50% 75%,#f1eadf 75% 100%);
+      box-shadow:inset 0 0 0 1px rgba(191,160,106,.35),0 6px 16px rgba(0,0,0,.08);
+      position:relative;
+    }
+    .logo:after{
+      content:"";position:absolute;inset:9px;border-radius:10px;
+      background:linear-gradient(180deg,rgba(255,255,255,.7),rgba(255,255,255,0));
+      box-shadow:inset 0 0 0 1px rgba(255,255,255,.5);
+    }
+    .brand h1{margin:0;font-size:20px;letter-spacing:.04em}
+    .brand small{display:block;color:var(--muted);font-size:12px}
+    nav a{
+      color:var(--muted);text-decoration:none;font-size:14px;padding:8px 10px;border-radius:8px;
+    }
+    nav a:hover{background:#fff;box-shadow:var(--shadow)}
+    .hero{
+      margin:36px 0 18px;
+      padding:24px 22px;
+      background:rgba(255,255,255,.7);
+      backdrop-filter:blur(6px);
+      border:1px solid var(--line);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+    .hero h2{
+      margin:6px 0 10px;
+      font-size:clamp(28px,5.2vw,44px);
+      line-height:1.15;
+      background:linear-gradient(90deg,#3b4a58,#1f2933);
+      -webkit-background-clip:text;
+      color:transparent;
+    }
+    .hero p{margin:6px auto;max-width:760px;color:#465564;line-height:1.9}
+    .goldline{
+      width:80px;height:3px;margin:14px auto 0;border-radius:3px;
+      background:linear-gradient(90deg,transparent,rgba(191,160,106,.9),transparent);
+    }
+    .grid{
+      margin-top:26px;
+      display:grid;
+      gap:16px;
+      grid-template-columns:1fr;
+    }
+    @media(min-width:860px){.grid{grid-template-columns:1fr 1fr 1fr}}
+    .card{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      transition:transform .12s ease;
+    }
+    .card:hover{transform:translateY(-2px)}
+    .card h3{margin:0 0 8px;font-size:18px;color:#28323b;}
+    .card p{margin:6px 0;color:#4a5968;line-height:1.9}
+    .meta{margin-top:8px;color:var(--muted);font-size:13px}
+    .cta{margin:26px 0 0;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
+    .btn{
+      text-decoration:none;
+      color:#fff;
+      background:linear-gradient(90deg,#bfa06a,#cbb48a);
+      padding:11px 16px;
+      border-radius:12px;
+      font-weight:700;
+      letter-spacing:.02em;
+      box-shadow:0 8px 22px rgba(191,160,106,.28);
+      border:1px solid rgba(191,160,106,.55);
+    }
+    .btn.muted{
+      color:#5b6b7a;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow)
+    }
+    .hr{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:30px 0}
+    footer{color:var(--muted);font-size:13px;text-align:center}
+    footer small{display:block;margin-top:8px;color:#8a98a6}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>智巢 · ZHINEST</h1>
+          <small>智慧的栖所 · The Nest of Intelligence</small>
+        </div>
+      </a>
+      <nav>
+        <a href="#about">关于</a>
+        <a href="#tracks">方向</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <h2>智慧的栖所，连接未来的你</h2>
+      <p>
+        在这个由智能驱动的时代，<b>智巢</b>不止是一页网页，更是一种生活方式与学习方式的提案。<br>
+        我们致力于把「智慧」落到真实的场景：让学习更高效、让家居更懂你、让协作更顺畅，也让科技多一点温度。
+      </p>
+      <div class="goldline"></div>
+      <p class="meta">Zhinest — The Nest of Intelligence. 以人为本的智能生态。</p>
+    </section>
+
+    <section class="grid" id="tracks">
+      <article class="card">
+        <h3>🧭 智慧生态</h3>
+        <p>AI 技术 × 云端服务 × 数据连接，构建一套可持续的智慧底座：更安全、更开放、更可扩展。</p>
+        <p class="meta">Intelligent foundation: cloud, data, interoperability.</p>
+      </article>
+
+      <article class="card">
+        <h3>💡 学习成长</h3>
+        <p>认知训练、学习路径、AI 辅导与评估，帮助你形成「会学、能学、学得好」的闭环。</p>
+        <p class="meta">Cognitive training and AI guidance for better learning.</p>
+      </article>
+
+      <article class="card">
+        <h3>🏡 未来生活</h3>
+        <p>智能家居与感知设计：灯光、声音、环境与情绪的协同，打造可感知、可理解、可自适应的空间体验。</p>
+        <p class="meta">Human-centered smart living and ambient design.</p>
+      </article>
+    </section>
+
+    <div class="cta" id="contact">
+      <a class="btn" href="mailto:xu456xu@gmail.com">📧 邮件联系 xu456xu@gmail.com</a>
+      <a class="btn muted" href="#" onclick="alert('欢迎来到智巢 ZHINEST'); return false;">了解更多</a>
+    </div>
+
+    <div class="hr"></div>
+
+    <footer>
+      <div>联系邮箱：<a href="mailto:xu456xu@gmail.com">xu456xu@gmail.com</a></div>
+      © ZHINEST.com · 智慧生活 · 智能未来
+      <small>本网站为概念展示，与任何现存企业无关联或合作关系，仅用于品牌与创意呈现。<br>
+      This site has no affiliation with any existing company. For concept & showcase purposes only.</small>
+    </footer>
+  </div>
+</body>
+</html>
